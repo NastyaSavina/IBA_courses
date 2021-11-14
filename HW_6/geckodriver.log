@@ -1,0 +1,24 @@
+1636922314022	geckodriver	INFO	Listening on 127.0.0.1:59364
+1636922316076	mozrunner::runner	INFO	Running command: "C:\\Users\\sadfiz\\Downloads\\MediaGet Downloads\\FirefoxPortableESR\\App\\Firefox64\\firefox.exe" "--marionette" "--remote-debugging-port" "59365" "-no-remote" "-profile" "C:\\Users\\sadfiz\\AppData\\Local\\Temp\\rust_mozprofileIUKa7l"
+1636922316401	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sadfiz\\AppData\\Local\\Temp\\rust_mozprofileIUKa7l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59365/devtools/browser/cfc60f13-c2c4-4d06-94d2-22efa54be451
+1636922318891	Marionette	INFO	Listening on port 59371
+1636922319364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+1636922368662	Marionette	INFO	Stopped listening on port 59371
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1636922369246	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
