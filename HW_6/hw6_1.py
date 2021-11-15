@@ -20,8 +20,8 @@ def browser():
     # закрытие браузера после теста (после yield)
     #driver.close()
 
-def test_main_menu(browser):
-    elems = browser.find_elements_by_css_selector('#mainnav ul li')
+def test_main_menu(driver):
+    elems = driver.find_elements_by_css_selector('#mainnav ul li')
     pprint(elems)
 
     elems_with_subtag_ul = []
@@ -45,5 +45,5 @@ def test_main_menu(browser):
     pprint(correct_hrefs)
 
     for href in correct_hrefs:
-        browser.get(href)
+        driver.get(href)
         time.sleep(5)

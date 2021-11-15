@@ -6,7 +6,7 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
 @pytest.fixture()
-def browser():
+def driver():
     # запуск Firefox при начале каждого теста (до yield)
     binary = FirefoxBinary(
         "C:\\Users\\sadfiz\\Downloads\\MediaGet Downloads\\FirefoxPortableESR\\App\\Firefox64\\firefox.exe")
@@ -20,18 +20,18 @@ def browser():
     #driver.close()
 
 
-def test_menu(browser):
-    elems = browser.find_elements_by_css_selector('#success-stories ul li a')
+def test_menu(driver):
+    elems = driver.find_elements_by_css_selector('#success-stories ul li a')
     href_list = []
     name_list = []
     for e in elems:
         href_list.append(e.get_attribute("href"))
         name_list.append(e.get_attribute('innerHTML'))
     for i in range(len(href_list)):
-        browser.get(
+        driver.get(
             href_list[i]
         )
-        elem = browser.find_element_by_css_selector('.breadcrumbs')
+        elem = driver.find_element_by_css_selector('.breadcrumbs')
         assert("success-stories", elem.get_attribute('innerHTML'))
         assert(
             name_list[i],
